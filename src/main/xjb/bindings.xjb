@@ -1,0 +1,31 @@
+<jaxb:bindings
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	version="2.1">
+	
+	<jaxb:bindings schemaLocation="../xsd/demo.xsd" node="//xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="com.greensky.framework.types"/>
+		</jaxb:schemaBindings>
+	</jaxb:bindings>
+
+	<jaxb:bindings schemaLocation="../xsd/demo.xsd">
+		<jaxb:bindings
+			node="//xs:element[@name='angularErrors']">
+			<jaxb:property>
+				<jaxb:baseType
+					name="java.util.Map&lt;String,java.util.Map&lt;String,FrameworkError&gt;&gt;" />
+			</jaxb:property>
+		</jaxb:bindings>
+		
+		<!-- <jaxb:bindings
+			node="//xs:element[@name='angularErrors']/xs:element[@name='entry']/xs:element[@name='value']">
+			<jaxb:property>
+				<jaxb:baseType
+					name="com.greensky.five9API.pojo.FrameworkErrorsMap" />
+			</jaxb:property>
+		</jaxb:bindings> -->
+
+	</jaxb:bindings>
+
+</jaxb:bindings>
