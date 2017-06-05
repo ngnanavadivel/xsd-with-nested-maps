@@ -8,7 +8,7 @@ JRE should be strictly JDK 1.8's JRE...not just any JRE.
 Use the Test.java...to try marshalling Java -> XSD types.
 
 #Sample Output
-
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ServiceResponse xmlns="http://greensky.com/demo">
     <roundTripIdentifier>1</roundTripIdentifier>
@@ -62,4 +62,4 @@ Use the Test.java...to try marshalling Java -> XSD types.
         </entry>
     </angularErrors>
 </ServiceResponse>
-
+```
